@@ -11,6 +11,8 @@ import operator
 #using https://covid.ourworldindata.org/data/ecdc/total_cases.csv
 #At present 130 days of data are available. 
 
+#git test... 
+
 pygame.init()
 
 #Constants 
@@ -21,9 +23,6 @@ SIZE_Y = 400
 FPS = 120
 
 timer = 0
-
-
-
 days = 0
 frames = 0
 clock = pygame.time.Clock()
@@ -48,15 +47,12 @@ if FS:
     SIZE_Y = info.current_h
     screen = pygame.display.set_mode((0, 0),pygame.FULLSCREEN)
 else:
-    #This producers a smaller window, which is for trying new code. 
-
-    
+    #This producers a smaller window, which is for trying new code.
     screen = pygame.display.set_mode((SIZE_X, SIZE_Y))
     
 class barchart(object):
     def __init__(self,id,color,data,name):
         self.id = id
-        
         self.color = color
         self.w = 0
         self.h = 35
