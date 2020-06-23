@@ -11,7 +11,7 @@ import operator
 #using https://covid.ourworldindata.org/data/ecdc/total_cases.csv
 #At present 130 days of data are available. 
 
-#git test... 
+
 
 pygame.init()
 
